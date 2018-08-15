@@ -1,0 +1,54 @@
+
+/Users/apple/Desktop/ios 
+➜  ios  git:(develop) ✗ git pull origin develop
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+➜  ios  git:(develop) ✗ git commit file/to/path -i -m "merge"
+U	skodarse.xcworkspace/xcuserdata/apple.xcuserdatad/UserInterfaceState.xcuserstate
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+➜  ios  git:(develop) ✗ git add .
+➜  ios  git:(develop) ✗ git commit file/to/path -i -m "merge"
+[develop f436918] merge
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rewrite skodarse.xcworkspace/xcuserdata/apple.xcuserdatad/UserInterfaceState.xcuserstate (70%)
+➜  ios  git:(develop) git pull orgin develop
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+➜  ios  git:(develop) git pull origin develop
+From http://git.timacloud.cn/jmcesapp/ios
+ * branch            develop    -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ .../Controller/AddPanRootViewController.m          |   7 +-
+ .../Controller/AddPanRootViewController.xib        |   5 +-
+ .../AddPanFollow/VIew/PopView/custonPhotoBtn.m     |  19 +++--
+ .../AddPanFollow/VIew/PopView/custonPhotoBtn.xib   |  28 +++----
+ rse/Customer/AddPanFollow/VIew/TheFollowUp.m       |  32 ++++++--
+ rse/Customer/AddPanFollow/VIew/nextFollowUp.m      |   1 +
+ .../AddPanFollow/VIew/nextFollowUpDingDan.m        |  83 +++++++++++++++----
+ rse/Customer/JMCNaviTitleView.h                    |   2 +-
+ rse/Customer/JMCNavigationBar.h                    |   2 +-
+ rse/Customer/MainCustomerViewController.m          |   6 +-
+ .../controllers/TransactionViewController.m        |   2 +-
+ .../detailed_JIANDNAG/Controller/TransparentMode.m |   2 +
+ .../View/followPlan/followContextAlert.m           |   4 +-
+ .../View/menuTabBar/firstContact/RecomModelVC.m    |  59 ++++++++++---
+ rse/Director/Customer/GroupScreenController.m      |   2 +-
+ rse/Director/Customer/ScreenChooseController.m     |   2 +-
+ rse/Main/HomeViewController.m                      |  13 ++-
+ rse/Main/model/HomeViewModel.h                     |   4 +-
+ rse/Main/view/HomeTopView.h                        |   2 +
+ rse/Main/view/HomeTopView.m                        |  91 +++++++++++++++------
+ rse/chumi/chumiOther/PrefixHeader.pch              |   6 +-
+ .../UINavigationController+customNav.m             |   2 +-
+ .../UserInterfaceState.xcuserstate                 | Bin 0 -> 246155 bytes
+ 23 files changed, 262 insertions(+), 112 deletions(-)
+ create mode 100644 skodarse.xcworkspace/xcuserdata/Willie.xcuserdatad/UserInterfaceState.xcuserstate
+➜  ios  git:(develop) 
